@@ -12,4 +12,20 @@ func main() {
 
 	// fmt.Println("Pesan ini tidak akan dieksekusi")
 	// fmt.Println("ini adalah tipe komentar inline")
+
+
+	// VARIABLES
+
+	/*
+		var <nama-variabel> <tipe-data> = <nilai>
+	*/
+	var firstname string = "Wafiy Anwarul"
+	var lastname string = "Hikam"
+
+	// PRINTF
+	fmt.Printf("Hello, Joe Willy!\n")
+	fmt.Printf("Hello, %s %s!\n", firstname, lastname)
+	fmt.Println("Hello, my name is", firstname, lastname + "!")
+
+	
 }
