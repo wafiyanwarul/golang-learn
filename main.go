@@ -42,7 +42,11 @@ func main() {
 
 	//lebih ringkas 
 	a, b, c, d, e := "1", "2", "3", "4", "5"
-	fmt.Println("This is", a, "and", b, "is", c, d, e)
+	fmt.Println("This is", a, b, c, d, "and", e)
 
-	
+	//dapat berbeda tipe data
+	one, isMonday, twoPointTwo, say := "1", true, 2.2, "Hello" //beda tipe data dalam satu deklarasi
+	fmt.Println(one, isMonday, twoPointTwo, say)
+
+
 }
