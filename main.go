@@ -39,4 +39,10 @@ func main() {
 
 	var a, b, c string = "1", "2", "3"
 	fmt.Println(a, b, c)
+
+	//lebih ringkas 
+	a, b, c, d, e := "1", "2", "3", "4", "5"
+	fmt.Println("This is", a, "and", b, "is", c, d, e)
+
+	
 }
