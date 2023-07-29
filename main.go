@@ -31,6 +31,12 @@ func main() {
 
 	fmt.Println("Welcome, %s %s!\n", first, last)
 
-	
+	// MULTI VARIABLE DECCLARATIONS
+	var first1, second1, third1 string
+	first1, second1, third1 = "one", "two", "three"
 
+	fmt.Println(first1, second1, third1)
+
+	var a, b, c string = "1", "2", "3"
+	fmt.Println(a, b, c)
 }
