@@ -48,5 +48,17 @@ func main() {
 	one, isMonday, twoPointTwo, say := "1", true, 2.2, "Hello" //beda tipe data dalam satu deklarasi
 	fmt.Println(one, isMonday, twoPointTwo, say)
 
+	/*variable underscore
+	  (_) underscore adalah reserved variable 
+	  untuk menampung variabel yang tidak digunakana agar tidak terjadi error
+	*/
+
+	_ = "Learn Golang"
+	_ = "Golang is Easy"
+	name, _ := "John", "Dalton"
+
+	fmt.Println(name) // variabel underscore tidak dipanggil disini
+
+	
 
 }
