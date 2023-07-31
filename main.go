@@ -61,11 +61,25 @@ func main() {
 
 	fmt.Println(name) // variabel underscore tidak dipanggil disini
 
-	//variable declaration using keyword NEW
-	// name1 = new(string) // variabel
+	// variable declaration using keyword NEW
+	var name1 = new(string) // variabel
 
-	// fmt.Println(name1) // 0x20818a220
-    // fmt.Println(*name1) // ""
+	fmt.Println(name1) // 0x20818a220
+    fmt.Println(*name1) // "angka di atas adalah alamat memori variabel name1 disimpan"
+
+	// CONSTANTS
+
+	const angka uint8 = 10 //constants hanya bisa dimasuki nilai sekali saja
+	//angka := 12 //jika kode disamping di uncomment
+	//maka akan muncul peringatan
+
+	fmt.Print(angka) //cetak nilai constant
+
+	var number int = 100 //nilai variabel dapat diubah
+	number = 150 // di sini nilainya dapat diubah karena dia bukan constants melainkan variabel
+
+	fmt.Print(number) //cetak nilai variabel
+	
 
 	
 
