@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+
+	fmt.Println("Kelebihan Golang : \n1. Memiliki Garbage Collector \n2. Memiliki Concurrency \n3. Lebih Cepat \n4. Mudah Dipelajari \n5. Didukung Banyak Framework")
 	/*
 	   ini adalah komentar di GO language
 	   ini adalah tipe komentar multiline
@@ -58,6 +60,12 @@ func main() {
 	name, _ := "John", "Dalton"
 
 	fmt.Println(name) // variabel underscore tidak dipanggil disini
+
+	//variable declaration using keyword NEW
+	// name1 = new(string) // variabel
+
+	// fmt.Println(name1) // 0x20818a220
+    // fmt.Println(*name1) // ""
 
 	
 
