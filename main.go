@@ -127,5 +127,14 @@ func main() {
 	fmt.Printf("\nIni boolean : %t\n", bb)	
 	// template "%t" digunakan untuk memformat tipe data boolean pada "fmt.Printf"
 
+	//STRING ( ditandai ",',`,baris baru")
+	var pesan string = `Ini adalah "pesan" 
+	pesan ini memiliki
+	tipe data yaitu
+	tipe data string` // pada variable tipe string ini ditandai dengan tana (`) backticks yang berguna untuk membuat kalimat pada baris berikutnya yang masih di dalam tanda backtick terdeteksi sebagai tipe data string
+
+	fmt.Printf("\nPesan %s\n", pesan) 
+	// template "%s" untuk memformat tipe data string
+
 	
 }
