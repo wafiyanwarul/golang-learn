@@ -104,4 +104,10 @@ func main() {
 	var ca4 rune = -2147483648           //sama dengan int32
 	fmt.Println("\nint ", ca, "\nint8 ", ca0, "\nint16 ", ca1, "\nint32 ", ca2, "\nint64 ", ca3, "\nrune ", ca4)
 
+	var neg = -1243423644 //tanpa deklarasi tipe data
+	fmt.Printf("Bilangan negatif : %d\n", neg) //compiler dengan cerdas akan menentukan tipe data int32
+	//karena masuk ke cakupan nilai dari int32
+	//template "%d" padan "fmt.Printf" digunakan untuk memformat data numerik non-desimal.
+
+	
 }
