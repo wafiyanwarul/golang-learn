@@ -9,7 +9,7 @@ func main() {
 	   ini adalah komentar di GO language
 	   ini adalah tipe komentar multiline
 	*/
-	fmt.Println("Hello, world!")
+	fmt.Println("      \nHello, world!")
 	fmt.Println("This is GO Language!")
 
 	// fmt.Println("Pesan ini tidak akan dieksekusi")
@@ -29,9 +29,9 @@ func main() {
 
 	// VAR WITHOUT DATA TYPE
 	var first string = "Carol" // dengan tipe data menggunakan perantara (=)
-	last := "Dweck" // tanpa tipe data menggunakan perantara (:=)
+	last := "Dweck"            // tanpa tipe data menggunakan perantara (:=)
 
-	fmt.Println("Welcome, %s %s!\n", first, last)
+	fmt.Printf("Welcome, %s %s!\n", first, last)
 
 	// MULTI VARIABLE DECCLARATIONS
 	var first1, second1, third1 string
@@ -42,16 +42,16 @@ func main() {
 	var a, b, c string = "1", "2", "3"
 	fmt.Println(a, b, c)
 
-	//lebih ringkas 
+	//lebih ringkas
 	a, b, c, d, e := "1", "2", "3", "4", "5"
 	fmt.Println("This is", a, b, c, d, "and", e)
 
 	//dapat berbeda tipe data
 	one, isMonday, twoPointTwo, say := "1", true, 2.2, "Hello" //beda tipe data dalam satu deklarasi
-	fmt.Println(one, isMonday, twoPointTwo, say)
+	fmt.Println("\nTipe data berbeda dalam satu deklarasi : \n", one, isMonday, twoPointTwo, say)
 
 	/*variable underscore
-	  (_) underscore adalah reserved variable 
+	  (_) underscore adalah reserved variable
 	  untuk menampung variabel yang tidak digunakana agar tidak terjadi error
 	*/
 
@@ -64,8 +64,8 @@ func main() {
 	// variable declaration using keyword NEW
 	var name1 = new(string) // variabel
 
-	fmt.Println(name1) // 0x20818a220
-    fmt.Println(*name1) // "angka di atas adalah alamat memori variabel name1 disimpan"
+	fmt.Println(name1)  // 0x20818a220
+	fmt.Println(*name1) // "angka di atas adalah alamat memori variabel name1 disimpan"
 
 	// CONSTANTS
 
@@ -76,11 +76,32 @@ func main() {
 	fmt.Print(angka) //cetak nilai constant
 
 	var number int = 100 //nilai variabel dapat diubah
-	number = 150 // di sini nilainya dapat diubah karena dia bukan constants melainkan variabel
+	number = 150         // di sini nilainya dapat diubah karena dia bukan constants melainkan variabel
 
 	fmt.Print(number) //cetak nilai variabel
-	
 
-	
+	//VARIABLE DECLARE USING "MAKE" KEYWORD
+	fmt.Print()
+	fmt.Println("'int' & 'uint'")
+	fmt.Println("'int'  :: bilangan bulat (-) & (+)")
+	fmt.Println("'uint' :: bilangan cacah positif saja (+)")
+
+	//UINT //semua nilai variabel bertipe data uint dimulai dari "0" ke positif
+	var positif uint = 18446744073709551615 //bisa sama dengan uint32 maupun uint64
+	var positif0 uint8 = 255
+	var positif1 uint16 = 65535
+	var positif2 uint32 = 4294967295
+	var positif3 uint64 = 18446744073709551615
+	var positif4 byte = 255 // tipe data byte sama dengan uint8
+	fmt.Println("\nuint ", positif, "\nuint8 ", positif0, "\nuint16 ", positif1, "\nuint32 ", positif2, "\nuint64 ", positif3, "\nbyte ", positif4)
+
+	//INT //semua nilai variabel bertipe data int menampung nilai dari negatif sampai dengan positif(akhiran 7)
+	var ca int = -9223372036854775808    //sama dengan int32 maupun int64
+	var ca0 int8 = -128                  //sampai dengan 127
+	var ca1 int16 = -32768               //sampai 32767
+	var ca2 int32 = -2147483648          //sampai dengan 2147483647
+	var ca3 int64 = -9223372036854775808 //sampai dengan 9223372036854775807
+	var ca4 rune = -2147483648           //sama dengan int32
+	fmt.Println("\nint ", ca, "\nint8 ", ca0, "\nint16 ", ca1, "\nint32 ", ca2, "\nint64 ", ca3, "\nrune ", ca4)
 
 }
