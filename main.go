@@ -86,6 +86,7 @@ func main() {
 	fmt.Println("'int'  :: bilangan bulat (-) & (+)")
 	fmt.Println("'uint' :: bilangan cacah positif saja (+)")
 
+	//NUMERIC NON-DECIMAL
 	//UINT //semua nilai variabel bertipe data uint dimulai dari "0" ke positif
 	var positif uint = 18446744073709551615 //bisa sama dengan uint32 maupun uint64
 	var positif0 uint8 = 255
@@ -104,10 +105,20 @@ func main() {
 	var ca4 rune = -2147483648           //sama dengan int32
 	fmt.Println("\nint ", ca, "\nint8 ", ca0, "\nint16 ", ca1, "\nint32 ", ca2, "\nint64 ", ca3, "\nrune ", ca4)
 
-	var neg = -1243423644 //tanpa deklarasi tipe data
-	fmt.Printf("Bilangan negatif : %d\n", neg) //compiler dengan cerdas akan menentukan tipe data int32
+	var neg = -1243423644                        //tanpa deklarasi tipe data
+	fmt.Printf("\nBilangan negatif : %d\n", neg) //compiler dengan cerdas akan menentukan tipe data int32
 	//karena masuk ke cakupan nilai dari int32
 	//template "%d" padan "fmt.Printf" digunakan untuk memformat data numerik non-desimal.
 
-	
+	//NUMERIC DECIMAL
+	//tipe data numerik decimal hanya ada float32 dan float64
+	var decNum = 2.62 //otomatis bertipe data float32 karena sesuai dengan cakupan
+	fmt.Printf("\nBilangan decimal 1 : %f\n", decNum)
+
+	// template %f digunakan untuk memformat data numerik desicimal menjadi string
+	// akan menghasilkan 6 digit, seperti pada hasil pertama 2.620000
+	// jumlah digit yang muncul dapat dikontrol dengan "%.nf" (ganti n dengan nilai yang diinginkan)
+	// contohnya pada kode di bawah ini : yaitu dengan "%.9f" maka muncul 9 digit dibelakang titik
+
+	fmt.Printf("Bilangan decimal 2 : %.9f\n", decNum) 
 }
