@@ -136,5 +136,15 @@ func main() {
 	fmt.Printf("\nPesan %s\n", pesan) 
 	// template "%s" untuk memformat tipe data string
 
-	
+	//NIL & ZERO VALUE (nilai kosong = nil)
+	var qA string
+	var qB bool 
+	var qC int
+	var qD = 0.
+	fmt.Printf("\nZero Value String %s\n", qA) //""
+	fmt.Printf("Zero Value Boolean %t\n", qB) //false
+	fmt.Printf("Zero Value Numerik Non-Decimal %d\n", qC) //0
+	fmt.Printf("Zero Value Numerik Decimal %.1f\n", qD) //0.0
+
+	//nil tidak dapat digunakan pada tipe data pointer, tipe data fungsi, slice, map, channel, interface kosong atau any (yang merupakan alias dari interface{}
 }
