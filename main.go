@@ -121,4 +121,11 @@ func main() {
 	// contohnya pada kode di bawah ini : yaitu dengan "%.9f" maka muncul 9 digit dibelakang titik
 
 	fmt.Printf("Bilangan decimal 2 : %.9f\n", decNum) 
+
+	//BOOLEAN ( TRUE / FALSE )
+	var bb bool = false
+	fmt.Printf("\nIni boolean : %t\n", bb)	
+	// template "%t" digunakan untuk memformat tipe data boolean pada "fmt.Printf"
+
+	
 }
