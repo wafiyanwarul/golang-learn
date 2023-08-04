@@ -144,11 +144,36 @@ func main() {
 
 	fmt.Print(angka) //cetak nilai constant
 
-	var number int = 100 //nilai variabel dapat diubah
-	number = 150         // di sini nilainya dapat diubah karena dia bukan constants melainkan variabel
+	var number int = 10 //nilai variabel dapat diubah
+	number = 15         // di sini nilainya dapat diubah karena dia bukan constants melainkan variabel
 
 	fmt.Print(number) //cetak nilai variabel
 
-	
+	const First string = "Wafiy"
+	fmt.Println("\nHi ", First, "!") //cetak
+
+	//multi constant declaration
+	const (
+		triangle = "segitiga"
+		isSunday bool = true
+		numeric uint8 = 7
+		float1 = 3.7
+	)
+
+	//contoh lagi
+	const (
+		yaa = "ini kata 'ya'"
+		yee //pada konteks ini, konstanta yang tidak diisi nilainya, maka tipe data dan nilainya akan disamakan dengan konstanta yang dideklarasikan sebelumnya
+	)
+
+	const (
+		Today string = "Senin"
+		hariIni
+		Today1 = true
+	)
+
+	fmt.Println("Apakah hari ini hari", Today, "?", Today1)
+
+	//deklarasi constant dalam satu baris
 	
 }
