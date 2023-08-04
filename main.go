@@ -179,4 +179,39 @@ func main() {
 	const tigabelas, empatbelas string = "tigabelas", "empatbelas"
 
 	fmt.Println("Ini angka", sebelas, duabelas, tigabelas, empatbelas)
+
+	//OPERATORS
+	//1. ARITHMETIC OPERATORS ("+", "-", "*", "/", "%")
+	//EXAMPLES :
+	var nilaiku = (((40 + 15) % 10) * (36 - 16)) / 1
+	 
+	fmt.Println("Nilaiku =", nilaiku)
+
+	//2. OPERATOR PERBANDINGAN
+	fmt.Println("Ini operator perbandingan : \n'==' berarti sama dengan \n'!=' berarti tidak sama dengan \n'<'  berarti lebih kecil dari \n'<=' berarti lebih kecil sama dengan \n'>'  berarti lebih besar \n'>=' berarti lebih besar sama dengan")
+	
+	x := 11
+	var y = (x < 9)
+	fmt.Printf("Is x < y? %d (%t) \n", x, y)
+
+	xa := 20
+	yb := 13
+	zc := xa > yb
+	fmt.Printf("Is 20 > 13 ? %d (%t) \n", zc)
+
+	//3. LOGIC OPERATORS
+	var kiri = false
+	var kanan = true
+
+	var kiridankanan = kiri && kanan
+	fmt.Printf("kiri && kanan \t(%t)\n", kiridankanan)
+
+	var kiriataukanan = kiri || kanan
+	fmt.Printf("kiri && kanan \t(%t)\n", kiriataukanan)
+	
+	var kebalikan = !kiri
+	fmt.Printf("kiri && kanan \t(%t)\n", kebalikan)
+
+
+	
 }
