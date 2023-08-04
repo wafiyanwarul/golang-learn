@@ -67,19 +67,6 @@ func main() {
 	fmt.Println(name1)  // 0x20818a220
 	fmt.Println(*name1) // "angka di atas adalah alamat memori variabel name1 disimpan"
 
-	// CONSTANTS
-
-	const angka uint8 = 10 //constants hanya bisa dimasuki nilai sekali saja
-	//angka := 12 //jika kode disamping di uncomment
-	//maka akan muncul peringatan
-
-	fmt.Print(angka) //cetak nilai constant
-
-	var number int = 100 //nilai variabel dapat diubah
-	number = 150         // di sini nilainya dapat diubah karena dia bukan constants melainkan variabel
-
-	fmt.Print(number) //cetak nilai variabel
-
 	//VARIABLE DECLARE USING "MAKE" KEYWORD
 	fmt.Print()
 	fmt.Println("'int' & 'uint'")
@@ -147,4 +134,21 @@ func main() {
 	fmt.Printf("Zero Value Numerik Decimal %.1f\n", qD) //0.0
 
 	//nil tidak dapat digunakan pada tipe data pointer, tipe data fungsi, slice, map, channel, interface kosong atau any (yang merupakan alias dari interface{}
+
+
+	// CONSTANTS
+
+	const angka uint8 = 10 //constants hanya bisa dimasuki nilai sekali saja
+	//angka := 12 //jika kode disamping di uncomment
+	//maka akan muncul peringatan
+
+	fmt.Print(angka) //cetak nilai constant
+
+	var number int = 100 //nilai variabel dapat diubah
+	number = 150         // di sini nilainya dapat diubah karena dia bukan constants melainkan variabel
+
+	fmt.Print(number) //cetak nilai variabel
+
+	
+	
 }
