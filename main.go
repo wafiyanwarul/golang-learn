@@ -175,5 +175,8 @@ func main() {
 	fmt.Println("Apakah hari ini hari", Today, "?", Today1)
 
 	//deklarasi constant dalam satu baris
-	
+	const sebelas, duabelas = 11, 12
+	const tigabelas, empatbelas string = "tigabelas", "empatbelas"
+
+	fmt.Println("Ini angka", sebelas, duabelas, tigabelas, empatbelas)
 }
