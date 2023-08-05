@@ -212,7 +212,7 @@ func main() {
 	var kebalikan = !kiri
 	fmt.Printf("kiri && kanan \t(%t)\n", kebalikan)
 
-	//IF CONDITIONS
+	//IF ELSE CONDITIONS
 
 	var value = 98
 
