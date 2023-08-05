@@ -212,6 +212,22 @@ func main() {
 	var kebalikan = !kiri
 	fmt.Printf("kiri && kanan \t(%t)\n", kebalikan)
 
+	//IF CONDITIONS
+
+	var value = 98
+
+	if value == 100 {
+		fmt.Println("Nilai anda sempurna!")
+	} else if value > 78 && value < 100 {
+		fmt.Println("Nilai anda di atas KKM!")
+	} else if value == 78 {
+		fmt.Println("Nilai anda tepat KKM!")
+	} else if value < 78 && value > 0 {
+		fmt.Println("Nilai anda di bawah KKM!")
+	} else {
+		fmt.Println("Anda tidak memiliki nilai!")
+	}
+
 
 	
 }
