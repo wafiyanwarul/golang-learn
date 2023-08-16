@@ -233,6 +233,41 @@ func main() {
 	var nilai2 = (nilai1 == 20)
 	fmt.Printf("Hasil = %d (%t)\n", nilai1, nilai2)
 
+	//SWITCH CASE
+
+	var point = 2
+	switch point {
+	case 0 :
+		fmt.Println("Pilihan pertama")
+		break
+	case 1 :
+		fmt.Println("Pilihan kedua")
+		break
+	case 2 :
+		fmt.Println("Pilihan ketiga")
+		break
+	default :
+		fmt.Println("Pilih pilihan yang ada!!!")
+	}
+
+
+	var pa = 7
+	switch pa {
+	case 1 :
+		fmt.Println("Satu")
+		break
+	case 2, 3 :
+		fmt.Println("Dua atau tiga")
+		break
+	case 4 :
+		fmt.Println("Empat")
+		break
+	case 6 :
+		fmt.Println("Lebih dari lima")
+		break
+		default :
+		fmt.Println("INI NILAI DEFAULT")
+	}
 
 	
 }
