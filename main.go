@@ -269,5 +269,15 @@ func main() {
 		fmt.Println("INI NILAI DEFAULT")
 	}
 
+	//LOOPING
+
+	//BENTUK POLA MIRING KANAN
+	for i := 1; i<6; i++ {
+		fmt.Println(i)
+		for j := 0; j < i; j++ {
+			fmt.Print(" ")
+		}
+	}
+
 	
 }
