@@ -191,13 +191,14 @@ func main() {
 	fmt.Println("Ini operator perbandingan : \n'==' berarti sama dengan \n'!=' berarti tidak sama dengan \n'<'  berarti lebih kecil dari \n'<=' berarti lebih kecil sama dengan \n'>'  berarti lebih besar \n'>=' berarti lebih besar sama dengan")
 	
 	x := 11
-	var y = (x < 9)
-	fmt.Printf("Is x < y? %d (%t) \n", x, y)
+	var y = (x == 9)
+	fmt.Println("x = 11, y = 9")
+	fmt.Printf("Is x = y? %d (%t) \n", x, y)
 
-	xa := 20
-	yb := 13
-	zc := xa > yb
-	fmt.Printf("Is 20 > 13 ? %d (%t) \n", zc)
+	xa := 17
+	yb := (xa == 17)
+	
+	fmt.Printf("Is 17 = 17 ? %d (%t) \n", xa, yb)
 
 	//3. LOGIC OPERATORS
 	var kiri = false
@@ -227,6 +228,10 @@ func main() {
 	} else {
 		fmt.Println("Anda tidak memiliki nilai!")
 	}
+
+	var nilai1 = 16
+	var nilai2 = (nilai1 == 20)
+	fmt.Printf("Hasil = %d (%t)\n", nilai1, nilai2)
 
 
 	
