@@ -279,6 +279,7 @@ func main() {
 
 	fmt.Println("\n")
 
+	//FOR LOOP WITH ARGUMENT (CONDITION ONLY)
 	var xx = 6
 	for xx < 11 {
 		fmt.Println(xx)
@@ -287,6 +288,7 @@ func main() {
 
 	fmt.Println("\n")
 
+	//FOR LOOP WITHOUT ARGUMENT
 	var ii = 10
 	for {
 		fmt.Print("$")
@@ -299,5 +301,10 @@ func main() {
 
 	fmt.Println("\n")
 
-	
+	//FOR LOOP (RANGE)
+	var xs = "10"
+	for i, v := range xs {
+		fmt.Println("Index = ", i, "Value = ", v)
+	}
+
 }
