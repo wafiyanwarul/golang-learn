@@ -285,4 +285,19 @@ func main() {
 		xx++
 	}
 
+	fmt.Println("\n")
+
+	var ii = 10
+	for {
+		fmt.Print("$")
+		ii++
+		if ii == 15{
+			break
+
+		}
+	}
+
+	fmt.Println("\n")
+
+	
 }
