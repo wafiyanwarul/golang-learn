@@ -107,11 +107,11 @@ func main() {
 	// jumlah digit yang muncul dapat dikontrol dengan "%.nf" (ganti n dengan nilai yang diinginkan)
 	// contohnya pada kode di bawah ini : yaitu dengan "%.9f" maka muncul 9 digit dibelakang titik
 
-	fmt.Printf("Bilangan decimal 2 : %.9f\n", decNum) 
+	fmt.Printf("Bilangan decimal 2 : %.9f\n", decNum)
 
 	//BOOLEAN ( TRUE / FALSE )
 	var bb bool = false
-	fmt.Printf("\nIni boolean : %t\n", bb)	
+	fmt.Printf("\nIni boolean : %t\n", bb)
 	// template "%t" digunakan untuk memformat tipe data boolean pada "fmt.Printf"
 
 	//STRING ( ditandai ",',`,baris baru")
@@ -120,21 +120,20 @@ func main() {
 	tipe data yaitu
 	tipe data string` // pada variable tipe string ini ditandai dengan tana (`) backticks yang berguna untuk membuat kalimat pada baris berikutnya yang masih di dalam tanda backtick terdeteksi sebagai tipe data string
 
-	fmt.Printf("\nPesan %s\n", pesan) 
+	fmt.Printf("\nPesan %s\n", pesan)
 	// template "%s" untuk memformat tipe data string
 
 	//NIL & ZERO VALUE (nilai kosong = nil)
 	var qA string
-	var qB bool 
+	var qB bool
 	var qC int
 	var qD = 0.
-	fmt.Printf("\nZero Value String %s\n", qA) //""
-	fmt.Printf("Zero Value Boolean %t\n", qB) //false
+	fmt.Printf("\nZero Value String %s\n", qA)            //""
+	fmt.Printf("Zero Value Boolean %t\n", qB)             //false
 	fmt.Printf("Zero Value Numerik Non-Decimal %d\n", qC) //0
-	fmt.Printf("Zero Value Numerik Decimal %.1f\n", qD) //0.0
+	fmt.Printf("Zero Value Numerik Decimal %.1f\n", qD)   //0.0
 
 	//nil tidak dapat digunakan pada tipe data pointer, tipe data fungsi, slice, map, channel, interface kosong atau any (yang merupakan alias dari interface{}
-
 
 	// CONSTANTS
 
@@ -154,10 +153,10 @@ func main() {
 
 	//multi constant declaration
 	const (
-		triangle = "segitiga"
-		isSunday bool = true
-		numeric uint8 = 7
-		float1 = 3.7
+		triangle       = "segitiga"
+		isSunday bool  = true
+		numeric  uint8 = 7
+		float1         = 3.7
 	)
 
 	//contoh lagi
@@ -184,12 +183,12 @@ func main() {
 	//1. ARITHMETIC OPERATORS ("+", "-", "*", "/", "%")
 	//EXAMPLES :
 	var nilaiku = (((40 + 15) % 10) * (36 - 16)) / 1
-	 
+
 	fmt.Println("Nilaiku =", nilaiku)
 
 	//2. OPERATOR PERBANDINGAN
 	fmt.Println("Ini operator perbandingan : \n'==' berarti sama dengan \n'!=' berarti tidak sama dengan \n'<'  berarti lebih kecil dari \n'<=' berarti lebih kecil sama dengan \n'>'  berarti lebih besar \n'>=' berarti lebih besar sama dengan")
-	
+
 	x := 11
 	var y = (x == 9)
 	fmt.Println("x = 11, y = 9")
@@ -197,7 +196,7 @@ func main() {
 
 	xa := 17
 	yb := (xa == 17)
-	
+
 	fmt.Printf("Is 17 = 17 ? %d (%t) \n", xa, yb)
 
 	//3. LOGIC OPERATORS
@@ -209,7 +208,7 @@ func main() {
 
 	var kiriataukanan = kiri || kanan
 	fmt.Printf("kiri && kanan \t(%t)\n", kiriataukanan)
-	
+
 	var kebalikan = !kiri
 	fmt.Printf("kiri && kanan \t(%t)\n", kebalikan)
 
@@ -237,47 +236,53 @@ func main() {
 
 	var point = 2
 	switch point {
-	case 0 :
+	case 0:
 		fmt.Println("Pilihan pertama")
 		break
-	case 1 :
+	case 1:
 		fmt.Println("Pilihan kedua")
 		break
-	case 2 :
+	case 2:
 		fmt.Println("Pilihan ketiga")
 		break
-	default :
+	default:
 		fmt.Println("Pilih pilihan yang ada!!!")
 	}
 
-
 	var pa = 7
 	switch pa {
-	case 1 :
+	case 1:
 		fmt.Println("Satu")
 		break
-	case 2, 3 :
+	case 2, 3:
 		fmt.Println("Dua atau tiga")
 		break
-	case 4 :
+	case 4:
 		fmt.Println("Empat")
 		break
-	case 6 :
+	case 6:
 		fmt.Println("Lebih dari lima")
 		break
-		default :
+	default:
 		fmt.Println("INI NILAI DEFAULT")
 	}
 
 	//LOOPING
 
 	//BENTUK POLA MIRING KANAN
-	for i := 1; i<6; i++ {
-		fmt.Println(i)
+	for i := 1; i < 6; i++ {
+		fmt.Println(" *")
 		for j := 0; j < i; j++ {
-			fmt.Print(" ")
+			fmt.Print(" *")
 		}
 	}
 
-	
+	fmt.Println("\n")
+
+	var xx = 6
+	for xx < 11 {
+		fmt.Println(xx)
+		xx++
+	}
+
 }
